@@ -21,24 +21,24 @@ const Hero = () => {
       id="hero"
     >
       <div
-        className="container relative outline outline-red-500"
+        className="container relative"
         ref={parallaxRef}
       >
-        <div className="relative z-1 mx-auto mb-[4rem] max-w-[62rem] text-center outline outline-blue-500 md:mb-20 lg:mb-[6rem]">
-          <h1 className="h1 mb-6 outline outline-red-500">
+        <div className="relative z-1 mx-auto mb-[4rem] max-w-[62rem] text-center md:mb-20 lg:mb-[6rem]">
+          <h1 className="h1 mb-6">
             Explore the Possibilities of&nbsp;AI&nbsp;Chatting with {` `}
-            <span className="relative inline-block outline outline-red-500">
+            <span className="relative inline-block">
               Brainwave{" "}
               <img
                 src={curve}
-                className="absolute left-0 top-full w-full outline outline-red-500 xl:-mt-2"
+                className="absolute left-0 top-full w-full xl:-mt-2"
                 width={624}
                 height={28}
                 alt="Curve"
               />
             </span>
           </h1>
-          <p className="body-1 mx-auto mb-6 max-w-3xl text-n-2 outline outline-red-500 lg:mb-8">
+          <p className="body-1 mx-auto mb-6 max-w-3xl text-n-2 lg:mb-8">
             Unleash the power of AI within Brainwave. Upgrade your productivity
             with Brainwave, the open AI chat app.
           </p>

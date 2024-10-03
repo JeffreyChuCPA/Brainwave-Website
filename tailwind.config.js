@@ -3,11 +3,13 @@ import { fontFamily } from "tailwindcss/defaultTheme";
 import plugin from "tailwindcss/plugin";
 
 export default {
+    //Specifies the file paths to scan for class names that will be used for purging unused CSS
     content: [
         "./index.html",
         "./src/**/*.{js,ts,jsx,tsx}",
         "./public/assets/**/*.{js,ts,jsx,tsx}"
     ],
+    // Extends the default Tailwind theme with custom properties like colors, spacing, and fonts.
     theme: {
         extend: {
             colors: {
@@ -83,6 +85,7 @@ export default {
             }
         }
     },
+    // Custom plugin creates reusable utilities, components, and base styles using addBase, addComponents, and addUtilities.
     plugins: [
         plugin(function ({ addBase, addComponents, addUtilities }) {
             addBase({});
